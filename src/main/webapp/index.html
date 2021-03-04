@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+			function validate() {
+	  		var x;
+
+	  		x = document.forms["Input"]["id"].value;
+
+	  		if (isNaN(x) ) {
+				alert("Debe ingresar un numero");
+				return false;
+			}
+	}
+	</script>
+	
+    </head>
+    <body background="fondo.jpeg">
+    	<center>
+    		<br>
+    		<br>
+    		<br>
+    		<H1 style="color: white">Bienvenido!</H1>
+    		<br>
+    		<br>
+    		<br>
+        	<form action="/lab5" method="get">
+        		<h3 style="color: white">Ingrese un número</h3>
+        		<div>
+        			<label for="optId">ID : </label>
+        			<input type="number" name="ID" min="1" max="200">
+        		</div>
+        		<br>
+        		<button type="submit"> Enviar</button>
+        	</form>
+    	</center>
+    </body>
+</html>

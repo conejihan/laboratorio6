@@ -1,0 +1,29 @@
+1. Revise el resultado obtenido. ¿Qué codigo de error sale?
+Sale el error 505 HTTP Version Not Supported el cual quiere decir que el servidor no admite la versión del protocolo HTTP utilizada en la solicitud.
+
+2. ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
+Estan los 1xx informational response  indica que la solicitud fue recibida y comprendida.
+Los 2xx success indica que la acción solicitada por el cliente fue recibida, comprendida y aceptada.
+Los 3xx redirection indica que el cliente debe realizar una acción adicional para completar la solicitud.
+Los 4xx client errors está destinada a situaciones en las que el error parece haber sido causado por el cliente.
+5xx server errors indican casos en los que el servidor es consciente de que ha encontrado un error o es incapaz de realizar la solicitud.
+
+3. ¿Cuál es la diferencia entre los verbos GET y POST? ¿Qué otros tipos de peticiones existen?
+Get es visible en la bara de direcciones del usuario y el Post es invisible para el usuario
+Otras peticiones que existen son: HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.
+PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.
+DELETE borra un recurso en específico.
+CONNECT establece un túnel hacia el servidor identificado por el recurso.
+OPTIONS es utilizado para describir las opciones de comunicación para el recurso de destino.
+TRACE realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al recurso de destino.
+PATCH es utilizado para aplicar modificaciones parciales a un recurso.
+
+4. ¿Cuáles son las diferencias con los diferentes parámetros?
+-v hace que la operación sea más habladora
+-i incluye encabezados de respuesta de protocolo en la salida
+
+20. Recompile y ejecute la aplicación. Abra en su navegador en la página del formulario, y rectifique que la página hecha anteriormente sea mostrada. Ingrese los datos y verifique los resultados. Cambie el formulario para que ahora en lugar de POST, use el método GET . Qué diferencia observa?
+Con el POST al colocar el numero y darle submit, no aparece el parametro en la parte del patch. En cambio con Get si aparece el parametro en el Patch.
+
+21. ¿Qué se está viendo? Revise cómo están implementados los métodos de la clase Service.java para entender el funcionamiento interno.
+Lo que se esta viendo es una tabla construida como si fuera html pero usando comandos en java.
