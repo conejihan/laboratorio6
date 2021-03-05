@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+	<head></head>
+	<h:body>
+
+ 		<h:form id="calculadora_form">
+ 			<p:outputLabel value="#{calculadoraBean.moda}" style="display: none;"></p:outputLabel>
+
+ 			<h2>Inserte los numeros</h2>
+			<div>Separe los numeros con punto y coma, sin espacios</div>
+ 			<p:inputText numeros="v" value="#{calculadoraBean.v}"></p:inputText>
+
+ 			<h2>Promedio</h2>
+ 			<p:outputLabel value="#{calculadoraBean.media}"></p:outputLabel>
+
+ 			<h2>Moda</h2>
+ 			<p:outputLabel value="#{calculadoraBean.moda}"></p:outputLabel>
+
+ 			<h2>Desviacion estandar</h2>
+ 			<p:outputLabel value="#{calculadoraBean.desviacion}"></p:outputLabel>
+
+
+ 			<h2>Varianza</h2>
+ 			<p:outputLabel value="#{calculadoraBean.varianza}"></p:outputLabel>
+ 			<h1></h1>
+ 			<p:commandButton value="Promedio" update="calculadora_form" actionListener="#{calculadoraBean.caculateMean()}"></p:commandButton>
+ 			<p:commandButton value="Desviacion" update="calculadora_form" actionListener="#{calculadoraBean.calculateStandardDeviation()}"></p:commandButton>
+ 			<p:commandButton value="Varianza" update="calculadora_form" actionListener="#{calculadoraBean.calculateVariance()}"></p:commandButton>
+ 			<p:commandButton value="Moda" update="calculadora_form" actionListener="#{calculadoraBean.calculateMode()}"></p:commandButton>
+ 			<p:commandButton value="Reiniciar" update="calculadora_form" actionListener="#{calculadoraBean.restart()}"></p:commandButton>
+
+			<br></br>
+			<br></br>
+			<br></br>
+			<p:dataTable var="num" value="#{calculadoraBean.valores}" >
+			<p:column headerText="Numeros">
+				<h:outputText value="#{num}" />
+			</p:column>
+			</p:dataTable>
+ 		</h:form>
+	</h:body>
+	</html>
