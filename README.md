@@ -81,3 +81,7 @@ Luego en la seccion de estilos se desabilito el estilo que lo ocultaba, lo que r
 
 Se jugo despues con los estilos de distintos elementos dando como resultado lo siguiente
 
+![](https://github.com/conejihan/laboratorio5/blob/main/capturas/styles.JPG)
+
+
+
