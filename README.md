@@ -1,4 +1,4 @@
-# **Nicolas Medina Vargas**
+# Laboratorio 5
 
 ## PARTE I. - JUGANDO A SER UN CLIENTE HTTP
 
@@ -52,10 +52,7 @@ Luego al ingresar a localhost:8080/helloServlet con el parametro ?name=Juan, se 
 ![](https://github.com/conejihan/laboratorio5/blob/main/capturas/10.png)
 
 
-Despues se ingreso a la URL 
-* [](https://jsonplaceholder.typicode.com/todos/1.)
-
-Donde se le cambio los numeros al final del Patch para ver que ocurria, este hacia cambiar la id y el title que aparecian en la pagina
+Despues se ingreso a la URL https://jsonplaceholder.typicode.com/todos/1. donde se le cambio los numeros al final del Patch para ver que ocurria, este hacia cambiar la id y el title que aparecian en la pagina
 
 ![](https://github.com/conejihan/laboratorio5/blob/main/capturas/12.png)
 ![](https://github.com/conejihan/laboratorio5/blob/main/capturas/13.png)
@@ -66,3 +63,21 @@ Donde se le cambio los numeros al final del Patch para ver que ocurria, este hac
 Al hacer la configuracion correspondiente para la creacion de la tabla con los datos de la URL anterior, se presento el siguiente resultado
 
 ![](https://github.com/conejihan/laboratorio5/blob/main/capturas/14.png)
+
+
+## PARTE IV. - FRAMEWORKS WEB MVC – JAVA SERVER FACES / PRIME FACES
+
+Al abrir la URL  http://localhost:8080/faces/calculadora.xhtml y despues de configurar todo, se busco el html que se genero, del cual se encontro el siguiente
+
+![](https://github.com/conejihan/laboratorio5/blob/main/capturas/html.JPG)
+
+Despues se busco el elemento que estaba oculto en el codigo.
+
+![](https://github.com/conejihan/laboratorio5/blob/main/capturas/numeroInvi.JPG)
+
+Luego en la seccion de estilos se desabilito el estilo que lo ocultaba, lo que resulto fue que aparecio el numero arriba de todo lo que se habia puesto
+
+![](https://github.com/conejihan/laboratorio5/blob/main/capturas/visible.JPG)
+
+Se jugo despues con los estilos de distintos elementos dando como resultado lo siguiente
+
