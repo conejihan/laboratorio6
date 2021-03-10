@@ -44,7 +44,7 @@ public class SampleServlet_C2 extends HttpServlet{
     }
   }
 
-  /*@Override
+  @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     try{
       Writer responseWriter = resp.getWriter();
@@ -65,5 +65,5 @@ public class SampleServlet_C2 extends HttpServlet{
     }catch (NumberFormatException | IOException e){
       resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
     }
-  }*/
+  }
 }
